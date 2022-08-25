@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" />
     <title>Number Guesser</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -22,12 +27,16 @@
         <p class="message" id="number-of-guesses"></p>
         <p class="message" id="too-high">You guessed too high. Try again.</p>
         <p class="message" id="too-low">You guessed too low. Try again.</p>
-        <p class="message" id="max-guesses">
-          You reached the max number of guesses
+        <p class="message" id="max-guesses" style="color: red"></p>
+        <p class="message" id="correct" style="color: red; font-size: large">
+          CONGRATULATIONS, YOU GUESSED CORRECTLY!<br /><br />
+          Would you like to play again?<br />
         </p>
-        <p class="message" id="correct">
-          Congratulations, You guessed correctly! <br />
-          Would you like to play again?
+        <p class="message" id="negNumber" style="color: red">
+          Must be greater than 0!
+        </p>
+        <p class="message" id="moreThan100" style="color: red">
+          Must be less than 100!
         </p>
       </div>
       <button id="reset">Reset</button>
